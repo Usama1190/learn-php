@@ -95,3 +95,60 @@ is_nan()
 
 However, the PHP var_dump() function returns the data type and value:
 
+### PHP Numerical Strings
+
+The PHP is_numeric() function can be used to find whether a variable is numeric. The function returns true if the variable is a number or a numeric string, false otherwise.
+
+Note: From PHP 7.0: The is_numeric() function will return FALSE for numeric strings in hexadecimal form (e.g. 0xf4c3b00c), as they are no longer considered as numeric strings.
+
+### PHP Casting Strings and Floats to Integers
+
+Sometimes you need to cast a numerical value into another data type.
+
+The (int), (integer), and intval() functions are often used to convert a value to an integer.
+
+### Exercise: PHP Numbers
+
+```
+What is a correct function to use to check if a variable is an integer?
+
+isnumeric()
+typeisint()
+is_int()
+```
+
+```
+Which one of these numbers is a float number:
+
+5
+5.6
+-6
+all of the above
+```
+
+```
+What is a correct syntax to force (cast) a float into an integer?
+
+$x = (int)5.6;
+$x = (5.6).toint();
+$x = int(5.6);
+```
+## PHP Casting
+
+Sometimes you need to change a variable from one data type into another, and sometimes you want a variable to have a specific data type. This can be done with casting.
+
+### Change Data Type
+
+Casting in PHP is done with these statements:
+
+(string) - Converts to data type String
+(int) - Converts to data type Integer
+(float) - Converts to data type Float
+(bool) - Converts to data type Boolean
+(array) - Converts to data type Array
+(object) - Converts to data type Object
+(unset) - Converts to data type NULL
+
+### Cast to String
+
+To cast to string, use the (string) statement:

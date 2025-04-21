@@ -60,11 +60,38 @@
     </body>
 </html> -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 
 <html>
     <body>
         <?php 
+        // Check if the variable is numeric
+        $x = 5834;
+        var_dump(is_numeric($x));
+
+        echo "<br>";
+
+        $x = "5834";
+        var_dump(is_numeric($x));
+
+        echo "<br>";
+
+        $x = "583" + 100;
+        var_dump(is_numeric($x));
+
+        echo "<br>";
+
+        $x = "Hello";
+        var_dump(is_numeric($x));
+        ?>
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+
+<html>
+    <body>
+    <?php 
         // Check if the numeric value is finite or infinite
         $x = 1.9e411;
         var_dump($x);
