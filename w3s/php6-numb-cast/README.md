@@ -152,3 +152,69 @@ Casting in PHP is done with these statements:
 ### Cast to String
 
 To cast to string, use the (string) statement:
+
+### Cast to Integer
+
+To cast to integer, use the (int) statement:
+
+### Cast to Float
+
+To cast to float, use the (float) statement:
+
+### Cast to Boolean
+
+To cast to boolean, use the (bool) statement:
+
+If a value is 0, NULL, false, or empty, the (bool) converts it into false, otherwise true.
+
+Even -1 converts to true.
+
+### Cast to Array
+
+To cast to array, use the (array) statement:
+
+When converting into arrays, most data types converts into an indexed array with one element.
+
+NULL values converts to an empty array object.
+
+Objects converts into associative arrays where the property names becomes the keys and the property values becomes the values:
+
+### Cast to Object
+
+To cast to object, use the (object) statement:
+
+When converting into objects, most data types converts into a object with one property, named "scalar", with the corresponding value.
+
+NULL values converts to an empty object.
+
+Indexed arrays converts into objects with the index number as property name and the value as property value.
+
+Associative arrays converts into objects with the keys as property names and values as property values.
+
+### Cast to NULL
+
+To cast to NULL, use the (unset) statement:
+
+### Exercise
+
+```
+What is a correct syntax to cast a float into a string?
+
+$ = (string) 5.6;
+$ = tostring(5.6);
+$ = (5.6).tostr()
+```
+
+```
+What is a correct syntax to cast a string into NULL
+
+$ = (NULL) "hello";
+$ = (unset) "hello";
+$ = "hello".toNull()
+```
+
+```
+Fill in the missing part to cast $x into a Boolean value:
+
+$x = ___ $x;
+```
